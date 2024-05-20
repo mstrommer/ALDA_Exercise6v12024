@@ -48,7 +48,7 @@ int maxKey(node *n){
 
 void postOrder(node *n){
     // Verwenden Sie die globale Variable bufferPO um den Output zu schreiben.
-    // Keine Trennzeichen!
+    // Trennzeichen: " " (nach jedem KEY)
     // Hier ein Beispiel:
     // char snum[5];
     // snprintf(snum, 5, "%d ", n->key);
@@ -57,7 +57,7 @@ void postOrder(node *n){
 
 void printLevel(node *n, int level){
     // Verwenden Sie die globale Variable bufferLO um den Output zu schreiben.
-    // Keine Trennzeichen!
+    // Trennzeichen: " " (nach jedem KEY)
     // Hier ein Beispiel:
     // char snum[5];
     // snprintf(snum, 5, "%d ", n->key);
