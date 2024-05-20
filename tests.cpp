@@ -108,7 +108,7 @@ TEST_CASE("Test8", "PostOrder")
     char buffer[100];
     copyBufferPO(buffer);
     INFO("Testing post Order notation. Your output is: " << buffer);
-    REQUIRE(strcmp(buffer, "2157643") == 0);
+    REQUIRE(strcmp(buffer, "2 1 5 7 6 4 3 ") == 0);
 }
 
 TEST_CASE("Test9", "LevelOrder")
@@ -125,5 +125,5 @@ TEST_CASE("Test9", "LevelOrder")
     char buffer[100];
     copyBufferLO(buffer);
     INFO("Testing level Order notation. Your output is: " << buffer);
-    REQUIRE(strcmp(buffer, "2010401152550") == 0);
+    REQUIRE(strcmp(buffer, "20 10 40 1 15 25 50 ") == 0);
 }

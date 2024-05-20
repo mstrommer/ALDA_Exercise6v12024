@@ -51,7 +51,7 @@ void postOrder(node *n){
     // Keine Trennzeichen!
     // Hier ein Beispiel:
     // char snum[5];
-    // snprintf(snum, 5, "%d", n->key);
+    // snprintf(snum, 5, "%d ", n->key);
     // strcat(bufferPO, snum);
 }
 
@@ -60,7 +60,7 @@ void printLevel(node *n, int level){
     // Keine Trennzeichen!
     // Hier ein Beispiel:
     // char snum[5];
-    // snprintf(snum, 5, "%d", n->key);
+    // snprintf(snum, 5, "%d ", n->key);
     // strcat(bufferLO, snum);
 }
 
