@@ -11,7 +11,7 @@
 TEST_CASE("Test1", "insert")
 {
     binTree *tree = t_init();
-    insert(tree, 1, "123");
+    insert(tree, 1, "Mon Mothma");
     INFO("No Node was inserted into the tree");
     REQUIRE(tree->root != nullptr);
 }
@@ -23,6 +23,7 @@ TEST_CASE("Test2", "insert")
     REQUIRE(tree->root != nullptr);
     INFO("Data needs to be inserted as C-String!");
     REQUIRE(strlen(tree->root->data) + 1 == 11);
+    tree->root->data[0] = 'C'; // If it breaks here, no heap memory was allocated for the data of a node!
 }
 
 TEST_CASE("Test3", "insert")
