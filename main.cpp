@@ -22,6 +22,8 @@ int main(int argc, char* const argv[] ){
     binTree *tree = t_init();
     // insert(tree, 20, "Your Name");
     
+    // Please remove your tests of postOrder and levelOrder prior to submission as the global
+    // buffer is being modified. 
 
     // DO NOT CHANGE CODE AFTER THIS LINE
     // This is where automatic testing starts, when the define macro constant is set to 1.
